@@ -38,6 +38,11 @@ def images(file):
     path = directory + '/images'
     return send_from_directory(directory=path, path=file)
 
+@app.route('/icons/<file>')
+def icons(file):
+    path = directory + '/icons'
+    return send_from_directory(directory=path, path=file)
+
 @app.route('/<file>')
 def public(file):
     return send_from_directory(directory=directory, path=file)
