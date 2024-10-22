@@ -5,9 +5,9 @@ import os
 from flask_sqlalchemy import SQLAlchemy
 from dataclasses import dataclass
 
+directory = f'{os.getcwd()}/client/dist'
 app = Flask(__name__)
 Compress(app)
-directory = f'{os.getcwd()}/client/dist'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
 db = SQLAlchemy(app)
@@ -23,12 +23,19 @@ class Comment(db.Model):
 @app.route('/')
 @app.route('/cell')
 @app.route('/hub')
+@app.route('/skills')
+@app.route('/book')
 def main():
     return send_from_directory(directory=directory, path='index.html')
 
 @app.route('/assets/<file>')
 def assets(file):
     path = directory + '/assets'
+    return send_from_directory(directory=path, path=file)
+
+@app.route('/images/<file>')
+def images(file):
+    path = directory + '/images'
     return send_from_directory(directory=path, path=file)
 
 @app.route('/<file>')
@@ -78,4 +85,4 @@ def deletepost():
 #     app.run(debug=True, port=3001)
 
 # flask --app app.py --debug run
-# gunicorn  -b 0.0.0.0 app:app
+# gunicorn -b 0.0.0.0 app:app
