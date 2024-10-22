@@ -24,6 +24,7 @@ export default {
         pause: 'url(/images/volume-x.svg)',
         share: 'url(/images/share4.svg)',
         flowerPattern2: "url('/images/FlowerBG2.jpeg')",
+        peacock1: 'url(/images/peacock1.jpeg)',
       }
 
     },

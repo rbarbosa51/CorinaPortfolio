@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Suspense } from "react";
-import { Home, Hub, Loading, Phone, Book,Skills } from "./pages";
+import { Home, Hub, Loading, Phone, Book,Skills,OS } from "./pages";
 
 export default function App() {
   return (
@@ -18,6 +18,8 @@ export default function App() {
         <Route path="/cell" element={<Phone />} />
         <Route path="/book" element={<Book />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/os" element={<OS />} />
+        
         <Route path="*" element={null} />
       </Routes>
     </div>

@@ -43,3 +43,35 @@
     opacity: 0;
   }
 }
+@property --pea-x {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+
+.desktop-bg {
+  height: 100vh;
+  background-image: url(/images/peacock1a.webp), url(/images/FlowerBG.webp);
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position:
+    var(--pea-x, 50%) 50%,
+    center;
+  background-color: rgb(250, 250, 250);
+  /* animation: move-peacock 0.5s linear infinite alternate; */
+}
+
+@keyframes move-peacock {
+  from {
+    --pea-x: 49.7%;
+  }
+  to {
+    --pea-x: 50.3%;
+  }
+}
+.window-logo {
+  background-image: url(/icons/windowslogo.svg);
+  background-position: center;
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+}
