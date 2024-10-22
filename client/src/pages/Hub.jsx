@@ -6,6 +6,11 @@ export default function Hub() {
       <Link className="underline" to={"/cell"}>
         Phone
       </Link>
+      <Link className="underline" to={'/skills'}>
+      Skills
+      </Link>
+      <Link className="underline" to={'/book'}>Book</Link>
+      <Link className="underline" to={'/os'}>OS</Link>
     </div>
   );
 }
