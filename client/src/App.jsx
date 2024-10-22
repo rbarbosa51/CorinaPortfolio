@@ -15,7 +15,7 @@ export default function App() {
             </Suspense>
           }
         />
-        <Route path="/phone" element={<Phone />} />
+        <Route path="/cell" element={<Phone />} />
         <Route path="*" element={null} />
       </Routes>
     </div>

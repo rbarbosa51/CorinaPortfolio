@@ -21,7 +21,8 @@ class Comment(db.Model):
         return f'{self.id}, name {self.username} message {self.message}'
 
 @app.route('/')
-@app.route('/phone')
+@app.route('/cell')
+@app.route('/hub')
 def main():
     return send_from_directory(directory=directory, path='index.html')
 
@@ -49,7 +50,7 @@ def createPost():
     try:
         db.session.add(new_post)
         db.session.commit()
-        return redirect('/phone')
+        return redirect('/cell')
     except Exception as e:
         print(f'Error: {e}')
         return f'Error: {e}'
@@ -69,7 +70,7 @@ def deletepost():
     id = Comment.query.filter_by(id=request.form.get('idDelete')).first()
     db.session.delete(id)
     db.session.commit()
-    return redirect('/phone')
+    return redirect('/cell')
 
 # if __name__ == "__main__":
 #     with app.app_context():
