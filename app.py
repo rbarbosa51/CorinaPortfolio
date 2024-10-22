@@ -43,6 +43,16 @@ def icons(file):
     path = directory + '/icons'
     return send_from_directory(directory=path, path=file)
 
+@app.route('/models/<file>')
+def models(file):
+    path = directory + '/models'
+    return send_from_directory(directory=path, path=file)
+
+@app.route('/music/<file>')
+def music(file):
+    path = directory + '/music'
+    return send_from_directory(directory=path, path=file)
+
 @app.route('/<file>')
 def public(file):
     return send_from_directory(directory=directory, path=file)
