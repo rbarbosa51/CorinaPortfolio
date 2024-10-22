@@ -18,6 +18,7 @@ export default {
       },
       backgroundImage: {
         peacocktw: 'url(/images/peacockBG.webp)',
+        oldPage: 'url(/images/oldpage2.webp)',
         menu: 'url(/images/menu.png)',
         volume: 'url(/images/volume.svg)',
         pause: 'url(/images/volume-x.svg)',

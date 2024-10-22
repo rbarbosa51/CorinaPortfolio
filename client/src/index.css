@@ -16,6 +16,12 @@
     background: #457fca;
     background: linear-gradient(to right, #5691c8, #457fca);
   }
+  .column-gap-60 {
+    column-gap: 60px;
+  }
+  .column-gap-30 {
+    column-gap: 30px;
+  }
 }
 
 .ripple-btn {
