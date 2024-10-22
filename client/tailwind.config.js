@@ -23,6 +23,7 @@ export default {
         volume: 'url(/images/volume.svg)',
         pause: 'url(/images/volume-x.svg)',
         share: 'url(/images/share4.svg)',
+        flowerPattern2: "url('/images/FlowerBG2.jpeg')",
       }
 
     },
