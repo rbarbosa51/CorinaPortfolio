@@ -12,3 +12,4 @@ export { default as Wiki } from "./Wiki";
 export { default as Videos } from "./Videos";
 export { default as Note } from "./Note";
 export { default as Terminal } from "./Terminal";
+export { default as Scene } from "./Scene";
