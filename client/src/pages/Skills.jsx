@@ -13,7 +13,7 @@ const Skills = () => {
           rippleColor={'bg-rose-500'}
           >Go Back</RippleBtn>
         </Link>
-      <h1 className="text-center text-glow-red pt-2 pb-4 text-rose-500 text-6xl font-water-brush flex justify-center tracking-widest ">How <span className="mx-6">You</span> benefit</h1>
+      <h1 className="text-center text-glow-red pt-2 pb-4 text-rose-500 text-6xl font-waterBrush flex justify-center tracking-widest ">How <span className="mx-6">You</span> benefit</h1>
       
       <div className="w-[50vw] mx-auto">
         <Carousel autoSlide={true} autoSlideInterval={10000}>
