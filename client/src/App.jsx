@@ -1,26 +1,27 @@
 import { Routes, Route } from "react-router-dom";
 import { Suspense } from "react";
-import { Home, Hub, Loading, Phone, Book,Skills,OS } from "./pages";
+import { Home, Hub, Loading, Phone, Book,Skills,OS,NotFound } from "./pages";
 
 export default function App() {
   return (
     <div className="h-screen bg-peacocktw">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route
           path="/hub"
+          exact
           element={
             <Suspense fallback={<Loading />}>
               <Hub />
             </Suspense>
           }
         />
-        <Route path="/cell" element={<Phone />} />
-        <Route path="/book" element={<Book />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/os" element={<OS />} />
+        <Route path="/cell" exact element={<Phone />} />
+        <Route path="/book" exact element={<Book />} />
+        <Route path="/skills" exact element={<Skills />} />
+        <Route path="/os" exact element={<OS />} />
         
-        <Route path="*" element={null} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
