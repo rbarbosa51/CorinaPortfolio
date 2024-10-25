@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { homePageItemVariants } from "../utilities/variants.js";
 import { RippleBtn } from "../components";
-
+import {homePageBtn,homePageText,homePageTitle} from '../strings'
 
 function sketch(p5) {
   const points = [];
@@ -60,7 +60,7 @@ export default function Home() {
         transition={{ duration: 2, ease: "easeInOut" }}
         className="mx-4 mt-4 w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center  font-waterBrush flowFieldPink tracking-widest text-6xl backdrop-blur-sm backdrop-filter lg:w-[60%]"
       >
-        Corina's Portfolio
+        {homePageTitle}
       </motion.h1>
       <motion.p
         variants={homePageItemVariants}
@@ -69,7 +69,7 @@ export default function Home() {
         transition={{ duration: 4, ease: "easeInOut" }}
         className="w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-montserrat flowFieldPinkText backdrop-blur-sm backdrop-filter lg:w-[60%]"
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aspernatur molestiae modi eum, rem corrupti laudantium beatae velit enim ducimus consequuntur ipsam assumenda temporibus nisi neque unde consectetur id saepe magnam dignissimos? Dolore neque dolorem ducimus odit dignissimos voluptatum ea repellendus unde animi at et, dolor sed minima eius eveniet?
+        {homePageText}
       </motion.p>
 
       <motion.div
@@ -85,7 +85,7 @@ export default function Home() {
           }
           rippleColor={'bg-pink-300'}
         >
-          Enter
+          {homePageBtn}
         </RippleBtn>
       </motion.div>
 
