@@ -48,7 +48,7 @@ const Terminal = () => {
   }, [commands]);
 
   return (
-    <div className="font-inconsolata h-full w-full bg-slate-900 px-8 pt-4 text-lg text-green-200/80">
+    <div className="h-full w-full bg-slate-900 px-8 pt-4 font-inconsolata text-lg text-green-200/80">
       <div className="text-4xl">Corina's Terminal</div>
       <div>Login: {new Date().toDateString()}</div>
 

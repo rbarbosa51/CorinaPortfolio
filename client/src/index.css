@@ -76,10 +76,10 @@
   background-repeat: no-repeat;
 }
 .text-glow-red {
-  text-shadow: 
-    0 0 5px  rgb(255,255,255),
-    0 0 10px rgb(255,255,255),
-    0 0 25px rgb(255,255,255),
+  text-shadow:
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
     0 0 40px rgb(244, 63, 94),
     0 0 55px rgb(244, 63, 94),
     0 0 80px rgb(244, 63, 94),

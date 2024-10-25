@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { homePageItemVariants } from "../utilities/variants.js";
 import { RippleBtn } from "../components";
-import {homePageBtn,homePageText,homePageTitle} from '../strings'
+import { homePageBtn, homePageText, homePageTitle } from "../strings";
 
 function sketch(p5) {
   const points = [];
@@ -58,7 +58,7 @@ export default function Home() {
         initial="hidden"
         animate="show"
         transition={{ duration: 2, ease: "easeInOut" }}
-        className="mx-4 mt-4 w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center  font-waterBrush flowFieldPink tracking-widest text-6xl backdrop-blur-sm backdrop-filter lg:w-[60%]"
+        className="flowFieldPink mx-4 mt-4 w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-waterBrush text-6xl tracking-widest backdrop-blur-sm backdrop-filter lg:w-[60%]"
       >
         {homePageTitle}
       </motion.h1>
@@ -67,7 +67,7 @@ export default function Home() {
         initial="hidden"
         animate="show"
         transition={{ duration: 4, ease: "easeInOut" }}
-        className="w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-montserrat flowFieldPinkText backdrop-blur-sm backdrop-filter lg:w-[60%]"
+        className="flowFieldPinkText w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-montserrat backdrop-blur-sm backdrop-filter lg:w-[60%]"
       >
         {homePageText}
       </motion.p>
@@ -81,9 +81,9 @@ export default function Home() {
       >
         <RippleBtn
           className={
-            "mb-4 cursor-pointer rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-montserrat text-2xl flowFieldPink backdrop-blur-sm backdrop-filter"
+            "flowFieldPink mb-4 cursor-pointer rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-montserrat text-2xl backdrop-blur-sm backdrop-filter"
           }
-          rippleColor={'bg-pink-300'}
+          rippleColor={"bg-pink-300"}
         >
           {homePageBtn}
         </RippleBtn>

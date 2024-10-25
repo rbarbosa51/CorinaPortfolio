@@ -1,8 +1,8 @@
 export { default as PhoneComponent } from "./PhoneComponent";
 export { default as RippleBtn } from "./RippleBtn";
 export { default as Vortex } from "./Vortex";
-export {default as Carousel} from './Carousel'
-export {default as SkillCard} from './SkillCard'
+export { default as Carousel } from "./Carousel";
+export { default as SkillCard } from "./SkillCard";
 export { default as Bin } from "./Bin";
 export { default as Photos } from "./Photos";
 export { default as Spotify } from "./Spotify";

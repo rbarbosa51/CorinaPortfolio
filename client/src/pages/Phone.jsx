@@ -24,7 +24,7 @@ const Phone = () => {
           </RippleBtn>
         </Link>
 
-        <h1 className="pt-1 text-center text-5xl font-waterBrush font-thin text-purple-600 tracking-widest">
+        <h1 className="pt-1 text-center font-waterBrush text-5xl font-thin tracking-widest text-purple-600">
           Comment Section
         </h1>
         <div className="flex w-full">

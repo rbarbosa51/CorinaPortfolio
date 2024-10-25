@@ -28,7 +28,6 @@
   },
 };*/
 export const homePageItemVariants = {
-  hidden: { opacity: 0, },
-  show: { opacity: 1,},
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
 };
-
