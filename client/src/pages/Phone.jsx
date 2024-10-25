@@ -24,7 +24,7 @@ const Phone = () => {
           </RippleBtn>
         </Link>
 
-        <h1 className="pt-1 text-center text-4xl font-thin text-purple-600">
+        <h1 className="pt-1 text-center text-5xl font-waterBrush font-thin text-purple-600 tracking-widest">
           Comment Section
         </h1>
         <div className="flex w-full">
@@ -85,7 +85,7 @@ const Phone = () => {
                     value={"Send"}
                   />
                 </form>
-                <div className="mb-14"></div>
+                <div className="mb-28"></div>
               </div>
             </PhoneComponent>
           </div>

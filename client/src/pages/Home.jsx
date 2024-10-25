@@ -58,7 +58,7 @@ export default function Home() {
         initial="hidden"
         animate="show"
         transition={{ duration: 2, ease: "easeInOut" }}
-        className="mx-4 mt-4 w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-kalniaGlaze text-5xl backdrop-blur-sm backdrop-filter lg:w-[60%]"
+        className="mx-4 mt-4 w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center  font-waterBrush flowFieldPink tracking-widest text-6xl backdrop-blur-sm backdrop-filter lg:w-[60%]"
       >
         Corina's Portfolio
       </motion.h1>
@@ -67,7 +67,7 @@ export default function Home() {
         initial="hidden"
         animate="show"
         transition={{ duration: 4, ease: "easeInOut" }}
-        className="w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-montserrat text-pink-800/80 backdrop-blur-sm backdrop-filter lg:w-[60%]"
+        className="w-[50%] rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-montserrat flowFieldPinkText backdrop-blur-sm backdrop-filter lg:w-[60%]"
       >
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aspernatur molestiae modi eum, rem corrupti laudantium beatae velit enim ducimus consequuntur ipsam assumenda temporibus nisi neque unde consectetur id saepe magnam dignissimos? Dolore neque dolorem ducimus odit dignissimos voluptatum ea repellendus unde animi at et, dolor sed minima eius eveniet?
       </motion.p>
@@ -81,7 +81,7 @@ export default function Home() {
       >
         <RippleBtn
           className={
-            "mb-4 cursor-pointer rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-montserrat text-2xl text-pink-800/80 backdrop-blur-sm backdrop-filter"
+            "mb-4 cursor-pointer rounded-xl border border-pink-500/30 bg-opacity-0 px-6 py-2 text-center font-montserrat text-2xl flowFieldPink backdrop-blur-sm backdrop-filter"
           }
           rippleColor={'bg-pink-300'}
         >
@@ -95,3 +95,5 @@ export default function Home() {
     </motion.div>
   );
 }
+
+//text-pink-800/80
