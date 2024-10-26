@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import { Suspense } from "react";
-import { Home, Hub, Loading, Phone, Book, Skills, OS, NotFound } from "./pages";
+import { lazy, Suspense } from "react";
+import { Home, Loading, Phone, Book, Skills, OS, NotFound } from "./pages";
+const Hub = lazy(() => import('./pages/Hub'))
 
 export default function App() {
   console.log(
@@ -8,7 +9,7 @@ export default function App() {
     "font-weight: thin; color: #ff0000; font-size:4rem",
   );
   return (
-    <div className="h-screen bg-peacocktw">
+    <div className="h-screen w-full bg-peacocktw">
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route
@@ -24,7 +25,6 @@ export default function App() {
         <Route path="/book" exact element={<Book />} />
         <Route path="/skills" exact element={<Skills />} />
         <Route path="/os" exact element={<OS />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
