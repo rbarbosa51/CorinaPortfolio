@@ -1,9 +1,10 @@
 import { Canvas } from "@react-three/fiber";
 import { Scene } from "../components";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useAtom } from "jotai";
 import { storeCameraState, cameraPosition } from "../store";
+import {SceneLoading} from './'
 
 export default function Hub() {
   const audioRef = useRef(new Audio("/music/ambient1.mp3"));
@@ -40,7 +41,9 @@ export default function Hub() {
   return (
     <div className="relative h-screen w-full bg-black">
       <Canvas shadows camera={{ position: [0, 3, 5], fov: 35 }}>
-        <Scene />
+        <Suspense fallback={<SceneLoading />}>
+          <Scene />
+        </Suspense>
       </Canvas>
       <div className="absolute left-1/2 top-1/2 z-50 hidden w-2/3 -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-[#60a6fb] p-4 text-white portrait:block pointer-events-none">
         <h2 className="text-center text-4xl">Warning</h2>

@@ -49,7 +49,7 @@ const Carousel = ({
       <div className="absolute bottom-2 left-0 right-0">
         <div className="flex items-center justify-center gap-2">
           {children.map((_, i) => (
-            <div
+            <div key={i}
               className={`h-3 w-3 rounded-full transition-all ${current === i ? "bg-rose-500/80 p-2" : "bg-white"}`}
             ></div>
           ))}

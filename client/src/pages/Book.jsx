@@ -15,7 +15,7 @@ export default function Book() {
           Corina Guzman
         </div>
       </div>
-      <p className="sm:column-gap-30 md:column-gap-60 columns-1 text-rose-950 md:columns-2">
+      <div className="sm:column-gap-30 md:column-gap-60 columns-1 text-rose-950 md:columns-2">
         <h1 className="text-center font-waterBrush text-8xl font-bold text-rose-800/60">
           Chapter 1
         </h1>
@@ -65,7 +65,7 @@ export default function Book() {
         omnis reprehenderit soluta ad quia deserunt voluptatum necessitatibus
         deleniti, nisi quam sapiente quasi eligendi commodi qui, voluptates hic,
         laboriosam totam temporibus? Exercitationem, ea.{" "}
-      </p>
+      </div>
     </div>
   );
 }
